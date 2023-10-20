@@ -6,7 +6,7 @@ library(dmetar)
 
 # Load and clean data
 
-pjt_data <- read_csv("https://github.com/cyfangus/meta-analysis/blob/main/meta_analysis_data.csv")
+pjt_data <- read_csv("https://raw.githubusercontent.com/cyfangus/meta-analysis/main/meta_analysis_data.csv?token=GHSAT0AAAAAACI64HTCRPHQTZBNRHWSU7QIZJSKKMQ")
 pjt_data_full <- pjt_data[
   !is.na(pjt_data$pj_si) & !is.na(pjt_data$si_le) & !is.na(pjt_data$pj_le),]
 pjt_data_h5 <- pjt_data[!is.na(pjt_data$pjxsi_le),]
