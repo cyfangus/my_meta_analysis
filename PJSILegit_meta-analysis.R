@@ -11,13 +11,6 @@ pjt_data_full <- pjt_data[
   !is.na(pjt_data$pj_si) & !is.na(pjt_data$si_le) & !is.na(pjt_data$pj_le),]
 pjt_data_h5 <- pjt_data[!is.na(pjt_data$pjxsi_le),]
 
-# Set data as numeric
-pjt_data$demin <- as.numeric(pjt_data$demin)
-pjt_data$hdi <- as.numeric(pjt_data$hdi)
-pjt_data$male_percent <- as.numeric(pjt_data$male_percent)
-pjt_data$minority_percent <- as.numeric(pjt_data$minority_percent)
-pjt_data$mean_age <- as.numeric(pjt_data$mean_age)
-
 # test correlation between PJ and Legit
 h1 <- metacor(
   cor = pj_le,
